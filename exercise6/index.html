@@ -1,0 +1,43 @@
+<!--
+    Name: Noah Hebert
+    Date: 15 September 2022
+    Class: ITSC 3155-001
+-->
+
+<html>
+    <head>
+        <title> Exercise 6 </title>
+        <link rel="stylesheet" type="text/css" href="styles.css"/>
+    </head>
+    <body>
+        <!--https://docs.fileformat.com/web/css/-->
+        <h1 class="main-title"> Hello World </h1>
+
+        <p class="content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nemo qui mollitia magnam illo impedit reiciendis, voluptatem maxime aspernatur iusto. Consequatur necessitatibus pariatur eaque qui fuga perferendis tempore consequuntur, dolor quas, rerum dolorum tempora ea at, quidem facilis! Quia, pariatur. Nam esse ullam eaque illo, necessitatibus iste quam?
+        </p>
+        <p class="content">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, voluptate! Quos cum quasi fugit, vero amet voluptatem, adipisci labore facere dolorum reiciendis distinctio, modi asperiores nostrum ea temporibus incidunt quis ad veritatis assumenda debitis inventore perspiciatis excepturi commodi? Dolor ab ipsum alias esse ratione atque aliquam nulla quia dolores consectetur.
+        </p>
+
+        <!---->
+        <input id="name-input" type="text" placeholder="Enter your name" />
+        <button id="my-button">Click Me</button>
+
+        <script>
+            //Adds a variable for the button
+            var myButton = document.querySelector('#my-button');
+            //Adds a variable for inputting the person's name
+            var nameInput = document.querySelector('#name-input');
+            //Adds clicking functionality to the button
+            myButton.addEventListener('click', function () {
+                //Checks if the nameInput is not empty
+                if (nameInput.value !== '') {
+                    //Pops up text saying Hello to the person who clicks the button
+                    alert('Hello ' + nameInput.value);
+                }
+            });
+        </script>
+
+    </body>
+</html>
